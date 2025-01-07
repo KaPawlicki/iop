@@ -9,8 +9,15 @@ int fibonacci(int n) {
 int main(){
         int n;
         cin >> n;
-        cout << n << endl;
-	cout << fibonacci(n) << endl;
+
+	if(n<0){
+		cout << "podano wartosc ujemna" <<endl;
+		exit(0);
+	} else {
+		cout << n << endl;
+		cout << fibonacci(n) << endl;
+	}
+
         return 0;
 }
 
