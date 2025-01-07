@@ -4,7 +4,14 @@ using namespace std;
 int main(){
         int n;
         cin >> n;
-        cout << n << endl;
+
+	if(n<0){
+		cout << "podano wartosc ujemna" <<endl;
+		exit(0);
+	} else {
+		cout << n << endl;
+	}
+
         return 0;
 }
 
